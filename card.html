@@ -11,7 +11,7 @@
             height:auto;
             padding-bottom:10px;
             border:1px solid black;
-            box-shadow: 5px 10px blue;
+            box-shadow: 5px 10px red;
         }
 
       .card:hover {
@@ -29,14 +29,61 @@
     .container1{
         padding:0px 0px 15px 5px;
         height:auto;
-        background-color:red;
+        background-color:yellow;
       }
+
+      .container3{
+              width:100%;
+            }
+
+            .container3 input{
+              width:90%;
+            }
+
+
+}
+
+@media screen and (max-width:900px) and (min-width: 601px) {
+    
+  .card {
+            width: 100%;
+            height:auto;
+            padding-bottom:10px;
+            border:1px solid black;
+            box-shadow: 5px 10px red;
+        }
+
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .container2 {
+          padding: 2px 16px;
+        }
+
+        .middlecontainer {
+            padding-left: 16px;
+          }
+        
+        .container1{
+            padding:0px 0px 15px 5px;
+            height:auto;
+            background-color:green;
+          }
+
+        .container3{
+                width:100%;
+              }
+
+            .container3 input{
+              width:90%;
+            }
 
 
 }
 
 
-@media screen and (max-width:1800px) and (min-width: 600px) {
+@media screen and (max-width:1800px) and (min-width: 901px) {
     .card {
                 width: 50%;
                 height:auto;
@@ -61,17 +108,24 @@
            }
 
 
-            .container1{
+           .container1{
             padding:0px 0px 15px 5px;
             height:auto;
             background-color:blue;
             }
 
+          .container3{
+              position:relative;
+              left:35%;
+              right:35%;
+              width:30%;
+            }
+
+            .container3 input{
+              width:100%;
+            }
+
 }
-
-
-
-
 
 </style>
 </head>
@@ -94,6 +148,19 @@
   <div class="container2">
     <h4 style="display: inline-block"><b>John Doe</b></h4> 
     <p style="display: inline-block;margin-left:5%">Architect & Engineer</p> 
+  </div>
+
+  <div class="container3">
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" ><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" ><br><br>
+        <div style="text-align:center">
+          <button type="submit" >submit</button>
+        </div>
+      
+    </form>
   </div>
   
 </div>
